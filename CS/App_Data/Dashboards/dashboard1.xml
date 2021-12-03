@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard>
+  <Title Text="New Dashboard" />
+  <DataSources>
+    <ObjectDataSource Name="Object Data Source" ComponentName="objectDataSource1">
+      <DataSource Type="DashboardGridHyperlink.Models.SalesPersonData, DashboardGridHyperlink, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+      <DataMember>GetSalesData</DataMember>
+      <CalculatedFields>
+        <CalculatedField Name="Calculated Field 1" Expression="Concat('?id=', [ID], '&amp;dep=', [Department])" DataType="Auto" />
+      </CalculatedFields>
+    </ObjectDataSource>
+  </DataSources>
+  <Items>
+    <Grid ComponentName="gridDashboardItem1" Name="Grid 1" DataSource="objectDataSource1">
+      <CustomProperties>
+        <Target>_self</Target>
+        <CustomJS>alert('{0}')</CustomJS>
+      </CustomProperties>
+      <DataItems>
+        <Dimension DataMember="SalesPerson" DefaultId="DataItem0" />
+        <Dimension DataMember="Department" DefaultId="DataItem3" />
+        <Dimension DataMember="ID" DefaultId="DataItem2" />
+        <Measure DataMember="Calculated Field 1" SummaryType="Min" DefaultId="DataItem1" />
+      </DataItems>
+      <GridColumns>
+        <GridDimensionColumn Weight="19.462025316455698">
+          <Dimension DefaultId="DataItem2" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Weight="26.10759493670886">
+          <Dimension DefaultId="DataItem3" />
+        </GridDimensionColumn>
+        <GridHyperlinkColumn Weight="179.43037974683546">
+          <DisplayValue DefaultId="DataItem0" />
+          <UriAttribute DefaultId="DataItem1" />
+        </GridHyperlinkColumn>
+      </GridColumns>
+      <GridOptions ColumnWidthMode="Manual" />
+    </Grid>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutItem DashboardItem="gridDashboardItem1" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>
