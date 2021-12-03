@@ -16,7 +16,6 @@ The resulting options look as follows:
 
 * [Default.aspx](./CS/Default.aspx)
 * [Default.aspx.cs](./CS/Default.aspx.cs)
-* [CustomRange.cs](./CS/Models/CustomRange.cs)
 * [GridHyperlinkOptionsExtension.js](./CS/GridHyperlinkOptionsExtension.js)
 
 <!-- default file list end -->
@@ -32,3 +31,6 @@ The resulting options look as follows:
 - [Dashboard - Constant Lines](https://github.com/DevExpress-Examples/dashboard-constant-lines)
 - [Dashboard for Web Forms - How to use Custom Properties to Modify Ranges in the Gauge Dashboard Item](https://github.com/DevExpress-Examples/web-forms-dashboard-gauge-ranges)
 - [Dashboard for Web Forms - How to access API of underlying widgets](https://github.com/DevExpress-Examples/how-to-access-api-of-underlying-widgets-in-the-aspnet-dashboard-control-t492396)
+
+**See Also:**
+[Web Dashboard - How to call a JavaScript function from a Grid HyperLink Column](https://supportcenter.devexpress.com/ticket/details/t587381/web-dashboard-how-to-call-a-javascript-function-from-a-grid-hyperlink-column)
