@@ -3,7 +3,7 @@
     var Designer = DevExpress.Dashboard.Designer;
 
     // 1. Model
-    var TragetProperty = {
+    var TargetProperty = {
         ownerType: Model.GridItem,
         propertyName: 'Target',
         defaultValue: '_blank',
@@ -17,7 +17,7 @@
         valueType: 'string'
     };
 
-    Model.registerCustomProperty(TragetProperty);
+    Model.registerCustomProperty(TargetProperty);
     Model.registerCustomProperty(CustomJSProperty);
 
     // 2. Viewer
@@ -33,7 +33,7 @@
                         a.attr('href', 'javascript:' + customJS.replace('{0}', e.data[uriKey]));
                     }
 
-                    a.attr('target', args.dashboardItem.customProperties.getValue(TragetProperty.propertyName));
+                    a.attr('target', args.dashboardItem.customProperties.getValue(TargetProperty.propertyName));
                 }
             };
         }
@@ -47,7 +47,7 @@
                 title: "Hyperlink Options (Custom)",
                 items: [
                     {
-                        dataField: TragetProperty.propertyName,
+                        dataField: TargetProperty.propertyName,
                         label: {
                             text: "Target"
                         },
