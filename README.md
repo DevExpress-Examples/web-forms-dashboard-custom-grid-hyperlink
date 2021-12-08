@@ -1,19 +1,18 @@
 <!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/434593648/21.2.3%2B)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1049972)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# Dashboard for Web Forms - How to customize Grid's Hyperlink Column behavior by using Custom Properties
+# Dashboard for Web Forms - How to Implement Additional Options for the Grid's Hyperlink Column
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/434593648/)**
 <!-- run online end -->
 
-This example shows how to adjust [Hyperlink Column](https://docs.devexpress.com/Dashboard/119499/web-dashboard/create-dashboards-on-the-web/dashboard-item-settings/grid/columns/hyperlink-column) behavior for the [Grid](https://docs.devexpress.com/Dashboard/117161/web-dashboard/create-dashboards-on-the-web/dashboard-item-settings/grid) item. The following [Custom Properties](https://docs.devexpress.com/Dashboard/401702/web-dashboard/ui-elements-and-customization/create-custom-properties) are implemented:
+This example shows how to use [Custom Properties](https://docs.devexpress.com/Dashboard/401702/web-dashboard/ui-elements-and-customization/create-custom-properties) to adjust the [Hyperlink Column](https://docs.devexpress.com/Dashboard/119499/web-dashboard/create-dashboards-on-the-web/dashboard-item-settings/grid/columns/hyperlink-column)'s capabilities for the [Grid](https://docs.devexpress.com/Dashboard/117161/web-dashboard/create-dashboards-on-the-web/dashboard-item-settings/grid) item. The following options are implemented:
 
-* **Target** - Specifies whether the link will be opened in a new or separate window (webpage).
-* **Custom JavaScript Code** - Specifies JS code which will be executed when the hyperlink is clicked. You can use the `{0}` placeholder in this code to get the value of a field which is specified in the hyperlinks Uri dimension.
+* **Target** - Specifies whether the link is opened in a new window or tab.
+* **Custom JavaScript Code** - Specifies JavaScript code which is executed when a user clicks the hyperlink. The `{0}` placeholder returns the value of the field specified in the hyperlink's URI.
 
-In addition, to pass multiple URL arguments, the [Calculated Field](https://docs.devexpress.com/Dashboard/117196/web-dashboard/create-dashboards-on-the-web/providing-data/calculated-fields) is used in the hyperlink column configuration.
+In addition, the [Calculated Field](https://docs.devexpress.com/Dashboard/117196/web-dashboard/create-dashboards-on-the-web/providing-data/calculated-fields) is used in the hyperlink column configuration to pass multiple URL arguments.
 
 The resulting options look as follows:
 
