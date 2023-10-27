@@ -3,7 +3,7 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1049972)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# Dashboard for Web Forms - How to Implement Additional Options for the Grid's Hyperlink Column
+# BI Dashboard for Web Forms - How to Implement Additional Options for the Grid's Hyperlink Column
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/434593648/)**
 <!-- run online end -->
@@ -20,7 +20,7 @@ The resulting options look as follows:
 ![](images/screenshot.png)
 
 <!-- default file list -->
-## Files to look at
+## Files to Review
 
 * [Default.aspx](./CS/Default.aspx)
 * [Default.aspx.cs](./CS/Default.aspx.cs)
