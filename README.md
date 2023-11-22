@@ -4,9 +4,6 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 # BI Dashboard for Web Forms - How to Implement Additional Options for the Grid's Hyperlink Column
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/434593648/)**
-<!-- run online end -->
 
 This example shows how to use [Custom Properties](https://docs.devexpress.com/Dashboard/401702/web-dashboard/ui-elements-and-customization/create-custom-properties) to adjust the [Hyperlink Column](https://docs.devexpress.com/Dashboard/119499/web-dashboard/create-dashboards-on-the-web/dashboard-item-settings/grid/columns/hyperlink-column)'s capabilities for the [Grid](https://docs.devexpress.com/Dashboard/117161/web-dashboard/create-dashboards-on-the-web/dashboard-item-settings/grid) item. The following options are implemented:
 
