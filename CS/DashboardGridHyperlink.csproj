@@ -91,6 +91,7 @@
   <ItemGroup>
     <Content Include="App_Data\Dashboards\dashboard1.xml" />
     <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="GridHyperlinkOptionsExtension.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -101,6 +102,9 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\SalesPersonData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
