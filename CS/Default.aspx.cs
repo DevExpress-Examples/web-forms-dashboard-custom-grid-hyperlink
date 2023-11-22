@@ -6,6 +6,7 @@ using DevExpress.DashboardWeb;
 namespace DashboardGridHyperlink {
     public partial class _Default : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(SalesPersonData));
             ASPxDashboard1.SetDataSourceStorage(CreateDataSourceStorage());
         }
 
