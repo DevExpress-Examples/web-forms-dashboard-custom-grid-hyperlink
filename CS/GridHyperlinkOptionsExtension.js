@@ -10,15 +10,7 @@
         valueType: 'string'
     };
 
-    var CustomJSProperty = {
-        ownerType: Model.GridItem,
-        propertyName: 'CustomJS',
-        defaultValue: '',
-        valueType: 'string'
-    };
-
     Model.registerCustomProperty(TargetProperty);
-    Model.registerCustomProperty(CustomJSProperty);
 
     // 2. Viewer
     function onItemWidgetOptionsPrepared(args) {
@@ -26,13 +18,6 @@
             args.options.onCellPrepared = function (e) {
                 if (e.column.displayMode == 'Hyperlink' && e.rowType == 'data') {
                     var a = e.cellElement.find('a');
-                    var customJS = args.dashboardItem.customProperties.getValue(CustomJSProperty.propertyName);
-
-                    if (customJS) {
-                        var uriKey = Object.keys(e.data).filter(key => key.indexOf(e.column.dataField + '_') == 0);
-                        a.attr('href', 'javascript:' + customJS.replace('{0}', e.data[uriKey]));
-                    }
-
                     a.attr('target', args.dashboardItem.customProperties.getValue(TargetProperty.propertyName));
                 }
             };
@@ -61,16 +46,6 @@
                                 value: "_self",
                                 text: "Same window"
                             }]
-                        }
-                    },
-                    {
-                        dataField: CustomJSProperty.propertyName,
-                        editorType: "dxTextBox",
-                        label: {
-                            text: "Custom JavaScript Code"
-                        },
-                        editorOptions: {
-                            placeholder: "alert('{0}')"
                         }
                     }
                 ]

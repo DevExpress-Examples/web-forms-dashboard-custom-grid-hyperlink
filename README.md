@@ -6,16 +6,15 @@
 <!-- default badges end -->
 # BI Dashboard for Web Forms - How to Implement Additional Options for the Grid's Hyperlink Column
 
-This example shows how to use [Custom Properties](https://docs.devexpress.com/Dashboard/401702/web-dashboard/ui-elements-and-customization/create-custom-properties) to adjust the [Hyperlink Column](https://docs.devexpress.com/Dashboard/119499/web-dashboard/create-dashboards-on-the-web/dashboard-item-settings/grid/columns/hyperlink-column)'s capabilities for the [Grid](https://docs.devexpress.com/Dashboard/117161/web-dashboard/create-dashboards-on-the-web/dashboard-item-settings/grid) item. The following options are implemented:
+This example implements a [Custom Property](https://docs.devexpress.com/Dashboard/401702/web-dashboard/ui-elements-and-customization/create-custom-properties) to adjust the [Hyperlink Column](https://docs.devexpress.com/Dashboard/119499/web-dashboard/create-dashboards-on-the-web/dashboard-item-settings/grid/columns/hyperlink-column)'s capabilities for the [Grid](https://docs.devexpress.com/Dashboard/117161/web-dashboard/create-dashboards-on-the-web/dashboard-item-settings/grid) item. The following option is implemented:
 
 * **Target** - Specifies whether the link is opened in a new window or tab.
-* **Custom JavaScript Code** - Specifies JavaScript code which is executed when a user clicks the hyperlink. The `{0}` placeholder returns the value of the field specified in the hyperlink's URI.
 
 In addition, the [Calculated Field](https://docs.devexpress.com/Dashboard/117196/web-dashboard/create-dashboards-on-the-web/providing-data/calculated-fields) is used in the hyperlink column configuration to pass multiple URL arguments.
 
 The resulting options look as follows:
 
-![](images/screenshot.png)
+![Web Dashboard - Custom Property for Hyperlink Column](images/screenshot.png)
 
 <!-- default file list -->
 ## Files to Review

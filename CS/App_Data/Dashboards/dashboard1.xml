@@ -14,7 +14,6 @@
     <Grid ComponentName="gridDashboardItem1" Name="Grid 1" DataSource="objectDataSource1">
       <CustomProperties>
         <Target>_self</Target>
-        <CustomJS>alert('{0}')</CustomJS>
       </CustomProperties>
       <DataItems>
         <Dimension DataMember="SalesPerson" DefaultId="DataItem0" />
@@ -29,7 +28,7 @@
         <GridDimensionColumn Weight="26.10759493670886">
           <Dimension DefaultId="DataItem3" />
         </GridDimensionColumn>
-        <GridHyperlinkColumn Weight="179.43037974683546">
+        <GridHyperlinkColumn Weight="179.43037974683546" UriPattern="https://www.devexpress.com/">
           <DisplayValue DefaultId="DataItem0" />
           <UriAttribute DefaultId="DataItem1" />
         </GridHyperlinkColumn>
